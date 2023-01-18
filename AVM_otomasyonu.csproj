@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D70CB4AC-672A-4B5E-9893-362424F1444C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AVM_otomasyonu</RootNamespace>
+    <AssemblyName>AVM_otomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frm_avm_gelir_giderleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_avm_gelir_giderleri.Designer.cs">
+      <DependentUpon>frm_avm_gelir_giderleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_avm_gider_gir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_avm_gider_gir.Designer.cs">
+      <DependentUpon>frm_avm_gider_gir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_avm_personel_verileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_avm_personel_verileri.Designer.cs">
+      <DependentUpon>frm_avm_personel_verileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_avm_personel_islemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_avm_personel_islemleri.Designer.cs">
+      <DependentUpon>frm_avm_personel_islemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_avm_yonetici_ekrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_avm_yonetici_ekrani.Designer.cs">
+      <DependentUpon>frm_avm_yonetici_ekrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ilk_ana_ekran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ilk_ana_ekran.Designer.cs">
+      <DependentUpon>frm_ilk_ana_ekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_avm_magaza_kontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_avm_magaza_kontrol.Designer.cs">
+      <DependentUpon>frm_avm_magaza_kontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_avm_yonetici_giris_ekrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_avm_yonetici_giris_ekrani.Designer.cs">
+      <DependentUpon>frm_avm_yonetici_giris_ekrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_avm_ana_sayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_avm_ana_sayfa.Designer.cs">
+      <DependentUpon>frm_avm_ana_sayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_m_magaza_ana_sayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_m_magaza_ana_sayfa.Designer.cs">
+      <DependentUpon>frm_m_magaza_ana_sayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_avm_magaza_islemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_avm_magaza_islemleri.Designer.cs">
+      <DependentUpon>frm_avm_magaza_islemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_m_magaza_giderleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_m_magaza_giderleri.Designer.cs">
+      <DependentUpon>frm_m_magaza_giderleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_m_magaza_gelir_gider_ekleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_m_magaza_gelir_gider_ekleme.Designer.cs">
+      <DependentUpon>frm_m_magaza_gelir_gider_ekleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_m_magaza_personel_islemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_m_magaza_personel_islemleri.Designer.cs">
+      <DependentUpon>frm_m_magaza_personel_islemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_m_magaza_personel_verileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_m_magaza_personel_verileri.Designer.cs">
+      <DependentUpon>frm_m_magaza_personel_verileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_m_magaza_yonetici_ekrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_m_magaza_yonetici_ekrani.Designer.cs">
+      <DependentUpon>frm_m_magaza_yonetici_ekrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_m_magaza_yonetici_giris_ekrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_m_magaza_yonetici_giris_ekrani.Designer.cs">
+      <DependentUpon>frm_m_magaza_yonetici_giris_ekrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_avm_magaza_kontrol.resx">
+      <DependentUpon>frm_avm_magaza_kontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_avm_gelir_giderleri.resx">
+      <DependentUpon>frm_avm_gelir_giderleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_avm_gider_gir.resx">
+      <DependentUpon>frm_avm_gider_gir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_avm_personel_verileri.resx">
+      <DependentUpon>frm_avm_personel_verileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_avm_personel_islemleri.resx">
+      <DependentUpon>frm_avm_personel_islemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_avm_yonetici_ekrani.resx">
+      <DependentUpon>frm_avm_yonetici_ekrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ilk_ana_ekran.resx">
+      <DependentUpon>frm_ilk_ana_ekran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_avm_yonetici_giris_ekrani.resx">
+      <DependentUpon>frm_avm_yonetici_giris_ekrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_avm_ana_sayfa.resx">
+      <DependentUpon>frm_avm_ana_sayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_m_magaza_ana_sayfa.resx">
+      <DependentUpon>frm_m_magaza_ana_sayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_avm_magaza_islemleri.resx">
+      <DependentUpon>frm_avm_magaza_islemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_m_magaza_giderleri.resx">
+      <DependentUpon>frm_m_magaza_giderleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_m_magaza_gelir_gider_ekleme.resx">
+      <DependentUpon>frm_m_magaza_gelir_gider_ekleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_m_magaza_personel_islemleri.resx">
+      <DependentUpon>frm_m_magaza_personel_islemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_m_magaza_personel_verileri.resx">
+      <DependentUpon>frm_m_magaza_personel_verileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_m_magaza_yonetici_ekrani.resx">
+      <DependentUpon>frm_m_magaza_yonetici_ekrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_m_magaza_yonetici_giris_ekrani.resx">
+      <DependentUpon>frm_m_magaza_yonetici_giris_ekrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\username.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yonetici 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yonetici.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\username1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staff 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop 7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staff 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop 21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staff 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loss 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\earn 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop 22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop 6.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
